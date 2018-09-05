@@ -20,7 +20,7 @@ allprojects {
 ## Step 2. Add the dependency
 ```groovy
 dependencies {
-	implementation 'com.github.XingRay:BitmapLoader:0.0.3'
+	implementation 'com.github.XingRay:BitmapLoader:0.0.1'
 }
 ```
 
