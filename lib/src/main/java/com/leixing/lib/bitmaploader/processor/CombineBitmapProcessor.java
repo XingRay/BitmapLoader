@@ -4,7 +4,6 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 
-
 import com.leixing.lib.bitmaploader.BitmapProcessor;
 
 import java.util.Iterator;
@@ -21,11 +20,15 @@ public class CombineBitmapProcessor implements BitmapProcessor {
     private LinkedList<Bitmap> mCombineBitmaps;
     private LinkedList<Rect> mSrcRects;
     private LinkedList<Rect> mDstRects;
+    private final Canvas mCanvas;
+
+    public CombineBitmapProcessor() {
+        mCanvas = new Canvas();
+    }
 
     @Override
     public Bitmap process(Bitmap bitmap) {
-        Canvas canvas = new Canvas(bitmap);
-
+        mCanvas.setBitmap(bitmap);
         if (mCombineBitmaps == null
                 || mSrcRects == null
                 || mDstRects == null) {
@@ -41,7 +44,7 @@ public class CombineBitmapProcessor implements BitmapProcessor {
             Bitmap combineBitmap = bitmapIterator.next();
             Rect src = srcIterator.next();
             Rect dst = dstIterator.next();
-            canvas.drawBitmap(combineBitmap, src, dst, null);
+            mCanvas.drawBitmap(combineBitmap, src, dst, null);
         }
         return bitmap;
     }
