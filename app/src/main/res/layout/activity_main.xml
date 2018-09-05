@@ -6,13 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/bt_frame_animation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="frame animation"
+        app:layout_constraintBottom_toTopOf="@+id/bt_set"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/bt_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="set by delay"
+        app:layout_constraintBottom_toTopOf="@+id/bt_cache"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_frame_animation" />
+
+    <Button
+        android:id="@+id/bt_cache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cache"
+        app:layout_constraintBottom_toTopOf="@+id/bt_reuse"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_set" />
+
+    <Button
+        android:id="@+id/bt_reuse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reuse"
+        app:layout_constraintBottom_toTopOf="@+id/bt_combine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_cache" />
+
+    <Button
+        android:id="@+id/bt_combine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cache and reuse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_reuse" />
 </android.support.constraint.ConstraintLayout>
