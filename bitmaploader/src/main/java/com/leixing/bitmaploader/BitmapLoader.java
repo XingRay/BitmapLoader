@@ -1,4 +1,4 @@
-package com.leixing.lib.bitmaploader;
+package com.leixing.bitmaploader;
 
 import android.graphics.Bitmap;
 

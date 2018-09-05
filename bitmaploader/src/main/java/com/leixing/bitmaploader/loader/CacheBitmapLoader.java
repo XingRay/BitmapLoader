@@ -1,4 +1,4 @@
-package com.leixing.lib.bitmaploader.loader;
+package com.leixing.bitmaploader.loader;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -8,8 +8,8 @@ import android.graphics.Rect;
 import android.util.SparseArray;
 
 
-import com.leixing.lib.bitmaploader.BitmapLoader;
-import com.leixing.lib.bitmaploader.BitmapProcessor;
+import com.leixing.bitmaploader.BitmapLoader;
+import com.leixing.bitmaploader.BitmapProcessor;
 
 import java.util.LinkedList;
 

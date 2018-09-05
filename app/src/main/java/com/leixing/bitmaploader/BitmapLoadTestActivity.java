@@ -11,10 +11,9 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.widget.ImageView;
 
-import com.leixing.lib.bitmaploader.BitmapLoader;
-import com.leixing.lib.bitmaploader.loader.CacheBitmapLoader;
-import com.leixing.lib.bitmaploader.loader.ReuseBitmapLoader;
-import com.leixing.lib.bitmaploader.processor.CombineBitmapProcessor;
+import com.leixing.bitmaploader.loader.CacheBitmapLoader;
+import com.leixing.bitmaploader.loader.ReuseBitmapLoader;
+import com.leixing.bitmaploader.processor.CombineBitmapProcessor;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

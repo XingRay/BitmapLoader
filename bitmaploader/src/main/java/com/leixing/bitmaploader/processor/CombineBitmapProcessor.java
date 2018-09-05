@@ -1,10 +1,10 @@
-package com.leixing.lib.bitmaploader.processor;
+package com.leixing.bitmaploader.processor;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 
-import com.leixing.lib.bitmaploader.BitmapProcessor;
+import com.leixing.bitmaploader.BitmapProcessor;
 
 import java.util.Iterator;
 import java.util.LinkedList;
